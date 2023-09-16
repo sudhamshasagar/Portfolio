@@ -430,8 +430,9 @@ nav {
     .about-section{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         margin: 10px 40px;
-        width: 100vw;
     }
     .social-icons{
         margin:5px auto;
@@ -479,14 +480,16 @@ nav {
         align-items: center;
         justify-content: center;
         margin: 20px auto;
-        width: 90vw;
+        width: 80vw;
     }
     .about-description h1{
         color: white;
         margin: 10px auto;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        text-align: center;
     }
     .about-description h3{
+        text-align: center;
         margin: 10px auto;
         font-size: 1.2rem;
         color: orange;
@@ -494,21 +497,20 @@ nav {
     .about-description p{
         margin: 10px auto;
         color: #b8b8b8;
-        font-size: 1.2rem;
+        font-size: 1.15rem;
         line-height: 2rem;
         text-align: justify;
-        width: 80vw;
+        width:70vw;
     }
     .buttons{
         display: flex;
         flex-direction: column;
-        width: 90vw;
         justify-content: center;
         align-items: center;
     }
     .buttons button{
         margin: 5px auto;
-        width: 35vw;
+        width: 40vw;
         padding: 8px;
         border-radius: 5px;
         border-style: none;
