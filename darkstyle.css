@@ -384,6 +384,57 @@ body{
     margin-left: 10px;
 }
 
+/* Contact Page Stylings */
+
+.contact-body{
+   width: 40vw;
+   height: 65vh;
+   margin: 30px auto;
+   background-color: #0000003b;
+   box-shadow: inherit 3px black;
+   display: flex;
+   flex-direction: column;
+}
+.contact-icons{
+    display: flex;
+    /* justify-content: space-between; */
+    margin: 40px auto;
+}
+.fa-phone , .fa-envelope-circle-check, .fa-instagram, .fa-whatsapp, .fa-location-dot, .fa-linkedin{
+    margin: 20px;
+    font-size: 25px;
+    color: black;   
+}
+.phone a, .email a, .insta a, .Whatsapp a, .location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.phone h4, .email h4, .insta h4, .Whatsapp h4, .location h4, .copy h4{
+    font-size: 15px;
+}
+.phone a:hover, .email a:hover, .insta a:hover, .Whatsapp a:hover, .location:hover{
+    color: white;
+}
+.address2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+    background-color: #000000cf;
+    color: white;
+    padding: 10px;
+}
+.address2 p{
+    text-align: justify;
+    margin: 10px auto;
+}
 
 
 
@@ -432,7 +483,7 @@ body{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 10px 40px;
+        margin: 10px auto;
     }
     .social-icons{
         margin:5px auto;
@@ -443,7 +494,7 @@ body{
         justify-content: center;
     }
     .fa-linkedin-in,  .fa-github, .fa-envelope{
-        color: #B0C4DE;
+        color: #000103;
         margin: 5px 10px;
         font-size: 25px;
     }
@@ -492,12 +543,12 @@ body{
         text-align: center;
         margin: 10px auto;
         font-size: 1.2rem;
-        color: orange;
+        color: rgb(0, 10, 77);
     }
     .about-description p{
-        margin: 10px auto;
+        margin: 20px auto;
         color: black;
-        font-size: 1.15rem;
+        font-size: 1.19rem;
         line-height: 2rem;
         text-align: justify;
         width:70vw;
@@ -766,5 +817,59 @@ body{
     .fa-square-up-right{
         margin-left: 10px;
     }
+
+
+
+    /* Contact Page Stylings(Responsiveness) */
+    .contact-body{
+        width: 90vw;
+        height: 83vh;
+        margin: 10px auto;
+        background-color: #0000003b;
+        box-shadow: inherit 3px black;
+        display: flex;
+        flex-direction: column;
+     }
+     .contact-icons{
+         display: flex;
+         flex-direction: column;
+         margin: 30px auto;
+     }
+     .fa-phone , .fa-envelope-circle-check, .fa-instagram, .fa-whatsapp, .fa-location-dot, .fa-linkedin{
+         margin: 10px auto;
+         font-size: 25px;
+         color: black;   
+     }
+     .phone a, .email a, .insta a, .Whatsapp a, .location{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin: 10px;
+         color: black;
+         text-decoration: none;
+     }
+     
+     .phone h4, .email h4, .insta h4, .Whatsapp h4, .location h4, .copy h4{
+         font-size: 15px;
+     }
+     .phone a:hover, .email a:hover, .insta a:hover, .Whatsapp a:hover, .location:hover{
+         color: white;
+     }
+     .address2{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin: 5px auto;
+         background-color: #000000cf;
+         color: rgb(75, 222, 252);
+         /* padding: 10px; */
+     }
+     .address2 p{
+         text-align: justify;
+         margin: 10px auto;
+         font-size: 15px;
+     }
     
 }
