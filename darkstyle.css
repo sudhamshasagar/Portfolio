@@ -431,10 +431,10 @@ nav {
         display: flex;
         flex-direction: column;
         margin: 10px 40px;
+        width: 100vw;
     }
     .social-icons{
-        margin:20px;
-        width: 15vw;
+        margin:5px auto;
         display: flex;
         flex-direction: row;
         border-right: none;
@@ -443,18 +443,20 @@ nav {
     }
     .fa-linkedin-in,  .fa-github, .fa-envelope{
         color: #B0C4DE;
-        margin: 10px;
-        font-size: 20px;
+        margin: 5px 10px;
+        font-size: 25px;
     }
     .fa-linkedin-in:hover,  .fa-github:hover, .fa-envelope:hover{
         color: white;
     }
     .image-section{
-        margin: 5px 20px;
-        width: 70vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px auto;
     }
     .image-section img{
-        margin-top: 5px;
+        margin: 5px auto;
         width: 300px;
         animation: bounce 5s infinite;
     }
@@ -474,39 +476,44 @@ nav {
     .about-description{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         margin: 20px auto;
         width: 90vw;
     }
     .about-description h1{
         color: white;
-        margin: 10px;
+        margin: 10px auto;
         font-size: 1.5rem;
     }
     .about-description h3{
-        margin: 10px;
-        font-size: 1.8rem;
+        margin: 10px auto;
+        font-size: 1.2rem;
         color: orange;
     }
     .about-description p{
-        margin: 10px;
+        margin: 10px auto;
         color: #b8b8b8;
-        font-size: 1rem;
+        font-size: 1.2rem;
         line-height: 2rem;
         text-align: justify;
         width: 80vw;
     }
-    .about-description button {
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .buttons button{
+        margin: 5px auto;
         width: 35vw;
-        margin: 8px auto;
-        padding: 12px;
+        padding: 8px;
         border-radius: 5px;
         border-style: none;
+
     }
-    .about-description button:hover{
-        background-color: #B0C4DE;
-    }
-    
-    
     /* Education Page Styles */
     .head{
         text-align: center;
