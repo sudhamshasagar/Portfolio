@@ -17,17 +17,18 @@ body{
 }
 
 /* Navigation Bar Styles */
-nav {
-    position: fixed;
-    margin-right: 5px;
-    bottom: 5px;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center; /* Optional background color for the footer */
-    padding: 0px; /* Optional padding for the footer content */
-    z-index: 999; /* Optional z-index to control the stacking order */
+
+#navbtn li{
+    background-color: #00000074;
+    margin: 1px 5px;
+    border-style: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.nav-item a{
+    padding: 5px;
+    color: #f8f9f9;
+    text-decoration: none;
 }
 .page-link{
     background-color: #00000084;
@@ -48,6 +49,7 @@ nav {
     display: flex;
     flex-direction: row;
     margin: 40px;
+    padding: 10px;
 }
 .social-icons{
     margin:20px;
@@ -92,7 +94,8 @@ nav {
 }
 
 .about-description{
-    margin: 20px;
+    padding: 10px;
+    margin: 40px 20px 5px;
 }
 .about-description h1{
     color: white;
@@ -400,18 +403,14 @@ nav {
 
     /* About section styles */
     
-    nav {
-        position: static;
+    #navbtn{
         width: 50vw;
-        bottom: 0px;
-        /* left: 0;
-        right: 0; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 10px auto;
-        padding: 10px;
-        z-index: 999;
+        text-align: center;
+        margin: auto;
+        font-size: 16px;  
+    }
+    #navtab{
+        border-radius: 0px 0px 5px 5px;
     }
     .page-link{
         background-color: #00000084;
@@ -497,7 +496,7 @@ nav {
     }
     .about-description p{
         margin: 10px auto;
-        color: #b8b8b8;
+        color: black;
         font-size: 1.15rem;
         line-height: 2rem;
         text-align: justify;
