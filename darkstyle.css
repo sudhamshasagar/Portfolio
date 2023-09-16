@@ -4,15 +4,15 @@
     box-sizing: border-box;
 }
 html{
-    background: #6441A5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  
-    background: linear-gradient(to right, #2a0845, #6441A5);
+    background: #4568DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size:200%;
 }
 body{
-    background: #6441A5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  
-    background: linear-gradient(to right, #2a0845, #6441A5);
+    background: #4568DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size:200%;
 }
 
@@ -106,7 +106,7 @@ nav {
 }
 .about-description p{
     margin: 10px;
-    color: #b8b8b8;
+    color: black;
     font-size: 1.2rem;
     line-height: 2rem;
     text-align: justify;
@@ -128,7 +128,7 @@ nav {
     text-align: center;
     margin: 30px auto;
     font-size: 17px;
-    color: rgb(162, 207, 244);
+    color: rgb(89, 171, 238);
     background-color: rgba(0, 0, 0, 0.514);
     padding: 5px;
     width: 25vw;
@@ -146,7 +146,7 @@ nav {
    border-radius: 5px 5px;
 }
 .card-body p{
-    color: rgb(162, 207, 244);
+    color: rgb(89, 171, 238);
 }
 .card{
     background-color: #b0c4de83;
@@ -358,16 +358,16 @@ nav {
     border-radius: 0px;
 }
 .title-button{
-    background-color: #000000e1;
+    background-color: #0f013e;
     color:orange;
     border-style: none;
     border-radius: 0px;
 }
 .project-detail{
-    background: #6441A5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  
-    background: linear-gradient(to right, #2a0845, #20133a);
-    color: white;
+    background: #4568dc60;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B06AB3, #4568DC);
+    color: black;
 }
 
 .project-description{
@@ -531,19 +531,20 @@ nav {
         width: 100%;
         border-radius: 0;
         margin: 5px;
+        padding: 10px;
     }
     .education-section {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 2px;
+        gap: 10px;
         font-size: 13px;
         margin-bottom: 0px;
         margin: 20px auto;
     }
     .education-details{
-        margin:10px;
+        margin:30px;
         height:48vh;
     }
     .card {
@@ -603,26 +604,20 @@ nav {
     
     
     
-    /* Experience section stylings */
+    /* Experience section stylings(Responsivenss */
     
     .experience {
-        /* text-align: center; */
-        padding: 10px;
         margin: auto;
-      }
-      
-      .section-title {
-        font-size: 2.5rem;
-        color: #333;
-        margin-bottom: 40px;
       }
       
       .experience-list {
         margin: 10px auto;
+        width: 90vw;
         display: flex;
-        flex-wrap: wrap; /* Enable wrapping */
-        justify-content: space-between; /* Distribute items evenly */
-        gap: 15px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        gap: 20px;
       }
       
       .experience-item-odd,
@@ -630,8 +625,7 @@ nav {
         background-color: #00000074;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: calc(50% - 20px); /* Adjust the width as needed */
+        width: 90vw;
         padding: 10px;
         border-radius: 10px;
         box-shadow: 5px 5px 5px 1px black;
@@ -648,16 +642,17 @@ nav {
       }
       
       .job-title {
+        text-align: center;
         font-size: 1.1rem;
         color: rgb(162, 207, 244);
       }
       .company-section{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
       }
       
       .company-section p {
-        font-size: 15px;
+        font-size: 14px;
         color: #f64904;
         margin-top: 5px;
       }
@@ -669,6 +664,7 @@ nav {
       }
       
       .responsibilities {
+        
         text-align: justify;
         margin-top: 10px;
       }
@@ -677,6 +673,7 @@ nav {
         font-size: 15px;
         color: #acabab;
         margin: 10px 0;
+        padding: 2px;
       }
       
       
@@ -697,7 +694,7 @@ nav {
     }
     
     #certificates img {
-        width: 19%; /* Set the width to occupy 50% of the container width */
+        width: 80%; /* Set the width to occupy 50% of the container width */
         height: auto;
         box-sizing: border-box;
         box-shadow: 0px 0px 4px 2px;
@@ -713,23 +710,25 @@ nav {
     /* Project section stylings */
     
     .project-list{
-        width: 50vw;
+        width: 90vw;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        justify-content: center;
         margin:  50px auto;
         padding: 10px;
         gap: 20px;
+        border-style: none;
         
     }
     .project{
         color: white;
         background-color: #00000084;
         border-radius: 10px;
-        width: 12.5vw;
+        width: 45vw;
         box-shadow: 4px 3px 4px 1px black;
         text-align: left;
+        border-style: none;
     }
     .project:hover{
         background-color: #bcbaba;
@@ -741,21 +740,21 @@ nav {
         line-height: 0%;
     }
     .head-foot{
-        background-color: #000000;
+        background-color: black;
         border-style: none;
         border-radius: 0px;
     }
     .title-button{
-        background-color: #000000e1;
-        color:orange;
+        background-color: #140043;
+        color:rgb(215, 176, 103);
         border-style: none;
         border-radius: 0px;
     }
     .project-detail{
-        background: #6441A5;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  
-        background: linear-gradient(to right, #2a0845, #20133a);
-        color: white;
+        background: #4568DC;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: rgb(23, 1, 1);
     }
     
     .project-description{
