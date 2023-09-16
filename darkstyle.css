@@ -401,16 +401,17 @@ nav {
     /* About section styles */
     
     nav {
-        position: fixed;
-        margin-right: 5px;
-        bottom: 5px;
-        left: 0;
-        right: 0;
+        position: static;
+        width: 50vw;
+        bottom: 0px;
+        /* left: 0;
+        right: 0; */
         display: flex;
-        justify-content: flex-end;
-        align-items: center; /* Optional background color for the footer */
-        padding: 0px; /* Optional padding for the footer content */
-        z-index: 999; /* Optional z-index to control the stacking order */
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+        padding: 10px;
+        z-index: 999;
     }
     .page-link{
         background-color: #00000084;
@@ -516,95 +517,89 @@ nav {
         border-style: none;
 
     }
-    /* Education Page Styles */
-    .head{
-        text-align: center;
-        margin: 30px auto;
-        font-size: 17px;
-        color: rgb(162, 207, 244);
-        background-color: rgba(0, 0, 0, 0.514);
-        padding: 5px;
-        width: 25vw;
-        border-radius: 15px 15px 0px 0px;
+
+
+
+
+
+
+
+
+    /* Education Page Styles(Responsiveness) */
+    .head {
+        font-size: 14px;
+        width: 100%;
+        border-radius: 0;
+        margin: 5px;
     }
-    .education-section{
+    .education-section {
         display: flex;
-        margin: 32px;
-        justify-content: space-around;
-        font-size: 15px;
-    }
-    .education-details{
-       margin: 30px 5px 5px 15px;
-       height: 62vh;
-       border-radius: 5px 5px;
-    }
-    .card-body p{
-        color: rgb(162, 207, 244);
-    }
-    .card{
-        background-color: #b0c4de83;
-        box-shadow:  10px 10px 2px black;
-        transition: transform 0.3s ease;
-    }
-    .card:hover{
-        transform: scale(1.1);
-        backface-visibility: visible;
-    }
-    .card p{
-        color: #2c2c2a;
-        width: 20vw; 
-    }
-    
-    .skills{
-        margin-top: 30px;
-        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 50vw;
+        gap: 2px;
+        font-size: 13px;
+        margin-bottom: 0px;
+        margin: 20px auto;
     }
-      
+    .education-details{
+        margin:10px;
+        height:48vh;
+    }
+    .card {
+        width: 100% !important;
+    }
+    .card p {
+        width: 100%;
+    }
+    .skills {
+        margin: 10px auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .skill-card {
         background-color: rgba(0, 0, 0, 0.379);
-        width: 20vw;
-        height: 15vw;
-        padding: 20px;
+        width: 90vw; /* Adjusted width for responsiveness */
+        height: fit-content;
+        padding: 10px;
         border-radius: 10px;
         margin: 15px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         text-align: center;
-        overflow: hidden;
+        overflow: visible;
         transition: transform 0.3s ease;
     }
-    .skill-card:hover{
+    
+    .skill-card:hover {
         transform: scale(1.05);
     }
-      
+    
     .title {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
+        font-size: 1.0rem;
+        margin-bottom: 10px;
         color: #3aa1c1;
     }
-      
+    
     .tags {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-wrap: wrap; /* Allow tags to wrap to the next line if needed */
     }
-      
+    
     .tag {
         background-color: #000008;
         color: #3aa1c1;
-        padding: 7px 15px;
-        font-size: 15px;
+        padding: 7px 10px;
+        font-size: 14px; /* Adjusted font size */
         margin: 5px;
         border-radius: 10px;
         cursor: pointer;
     }
+    
       
-    .tag:hover {
-        background-color: #b0c4de83;
-        color: #000000;
-    }
     
     
     
